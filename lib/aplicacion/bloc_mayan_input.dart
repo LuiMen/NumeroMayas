@@ -45,4 +45,10 @@ class BlocMayanInput extends Cubit<EstadoMayanInput> {
   void seleccionar(int indice) {
     emit(state.copyWith(seleccionado: indice));
   }
+
+  void limpiar() {
+    emit(state.copyWith(niveles: [
+      {MayanNumbers.one: 0, MayanNumbers.five: 0},
+    ]));
+  }
 }

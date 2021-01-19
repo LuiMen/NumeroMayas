@@ -166,6 +166,7 @@ class AnswerButton2 extends StatelessWidget {
             if (estadoPlay.isCorrect) {
               BlocProvider.of<BlocPlayRoom>(context).resetear();
               BlocProvider.of<BlocArabicInput>(context).limpiar();
+              BlocProvider.of<BlocMayanInput>(context).limpiar();
             }
           }
         },
